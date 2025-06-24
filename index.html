@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/src/styles/style.css">
+
+    <title>Mundo Pet</title>
+  </head>
+  <body>
+    <header>MUNDO PET</header>
+
+    <main>
+      <div id="schedule-header">
+        <h1>Sua agenda</h1>
+        <p>Aqui você pode ver todos os clientes e serviços agendados para hoje</p>
+        <div class="schedule-date">
+          <input type="date" class="schedule-date" />
+        </div>
+      </div>
+
+      <div class="schedule-block" id="morning"> 
+        <div class="block-header">
+          <i class="fa-solid fa-sun"></i>
+          <h2>Manhã</h2>
+          <h2>09h-12h</h2>
+        </div>
+          <hr class="schedule-divider-header" />
+          <div class="morning schedules"></div>
+
+        <!--
+        <div class="time-schedule">
+          <h3>09:00</h3>
+          <h3>Thor</h3>
+          <p>/Fernanda Costa</p>
+          <p>Vacinação</p>
+
+          <button>Remover agendamento</button>
+        </div>
+
+        <hr class="schedule-divider" />
+
+        
+        <div class="time-schedule">
+          <h3>09:00</h3>
+          <h3>Thor</h3>
+          <p>/Fernanda Costa</p>
+          <p>Vacinação</p>
+
+          <button>Remover agendamento</button>
+        </div>
+        -->
+      </div>
+      
+
+      <div class="schedule-block" id="afternoon">
+        <div class="block-header">
+          <i class="fa-solid fa-cloud-sun"></i>
+          <h2>Tarde</h2>
+          <h2>13h-18h</h2>
+        </div>
+          <hr class="schedule-divider-header" />
+          <div class="afternoon schedules"></div>
+
+          <!--
+        <div class="time-schedule">
+          <h3>09:00</h3>
+          <h3>Thor</h3>
+          <p>/Fernanda Costa</p>
+          <p>Vacinação</p>
+
+          <button>Remover agendamento</button>
+        </div>
+
+        <hr class="schedule-divider" />
+
+        <div class="time-schedule">
+          <h3>09:00</h3>
+          <h3>Thor</h3>
+          <p>/Fernanda Costa</p>
+          <p>Vacinação</p>
+
+          <button>Remover agendamento</button>
+        </div>
+        -->
+      </div>
+
+      <div class="schedule-block" id="night">
+        <div class="block-header">
+          <i class="fa-solid fa-moon"></i>
+          <h2>Noite</h2>
+          <h2>19h-21h</h2>
+        </div>
+          <hr class="schedule-divider-header" />
+        <div class="night schedules"></div>
+
+          <!--
+        <div class="time-schedule">
+          <h3>09:00</h3>
+          <h3>Thor</h3>
+          <p>/Fernanda Costa</p>
+          <p>Vacinação</p>
+
+          <button>Remover agendamento</button>
+        </div>
+
+        <hr class="schedule-divider" />
+
+        <div class="time-schedule">
+          <h3>09:00</h3>
+          <h3>Thor</h3>
+          <p>/Fernanda Costa</p>
+          <p>Vacinação</p>
+
+          <button>Remover agendamento</button>
+        </div>
+        -->
+      </div>
+      
+      <div id="btn-newSchedule">
+          <button>NOVO AGENDAMENTO</button>
+      </div>
+    </main>
+
+
+    <modal id="modal" class="hidden">
+      <div class="modal-content">
+        <h2>Agende um atendimento</h2>
+        <p>Preencha os dados do cliente para realizar o agendamento</p>
+        <form>
+          <label>
+            <i class="fa-solid fa-user"></i>
+            Nome do tutor: 
+            <input type="text" id="pet-owner" />
+          </label>
+          <label>
+            <i class="fa-solid fa-paw"></i>
+            Nome do pet: 
+            <input type="text" id="pet-name"/>
+          </label>
+          <label>
+            <i class="fa-solid fa-phone"></i>
+            Telefone: 
+            <input type="tel" id="telephone"/>
+          </label>
+          <label>
+            <i class="fa-solid fa-pen"></i>
+            Descrição do serviço: 
+            <textarea rows="3" id="description" placeholder="Banho e tosa"></textarea>
+          </label>
+          <div>
+            <label>
+              <i class="fa-solid fa-calendar"></i>              
+              Data: 
+              <input type="date" id="date"/>
+            </label>
+            <label>
+              <i class="fa-solid fa-clock"></i>
+              Hora: 
+              <input type="time" id="time"/>
+            </label>
+          </div>
+
+          <div class="buttons">
+            <button type="button" id="close-modal">Cancelar</button>
+            <button type="submit" id="add-schedule">Agendar</button>
+          </div>
+        </form>
+      </div>
+    </modal>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
