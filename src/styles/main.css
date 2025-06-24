@@ -1,0 +1,142 @@
+html, body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #14151d;
+    color: #fff;
+    padding: 10px;
+    max-width: 100%; 
+    overflow-x: hidden;  
+    font-size: 20px;
+}
+
+main {
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: absolute;
+    background-color: #2e2e38;
+    padding: 12px 20px;
+    height: 30px;
+    left: 0;
+    top: 0;
+    border-radius: 0 0 15px 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: var(--content-brand);
+}
+
+#schedule-header {
+    margin: 50px 10px;
+}
+
+.schedule-date input[type="date"] {
+    background-color: var(--background-tertiary);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 150px;
+    margin: 10px;
+}
+
+.schedule-block {
+    background-color: var(--background-tertiary);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.block-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+}
+
+.time-schedule {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.time-schedule h3, p {
+    color: #fff;
+    margin: 10px 10px 10px 0;
+}
+
+.time-schedule button {
+    justify-content: flex-end;
+    background: none;
+    color: #9ca3af;
+    border: none;
+    cursor: pointer;
+    font-size: 0.875rem;
+    padding: 0;
+    transition: color 0.3s;
+    margin: 10px;
+    padding: 10px;
+}
+
+.schedule-divider-header {
+    border: none;
+    height: 1px;
+    background-color: #2e2e38;
+}
+
+.schedule-divider {
+    border: none;
+    height: 1px;
+    background-color: #2e2e38;
+    margin: 10px;
+}
+
+.schedule-block h2 {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+#btn-newSchedule {
+    width: 100%;
+    background-color: var(--background-secondary);
+}
+
+#btn-newSchedule button {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: var(--background-brand);
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+}
+
+#btn-newSchedule button:hover {
+    background-color: var(--background-highlights);
+}
+
+@media (width>770px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .schedule-block {
+        width: 700px;
+    }
+}
