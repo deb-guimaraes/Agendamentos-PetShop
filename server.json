@@ -1,0 +1,22 @@
+{
+  "schedules": [
+    {
+      "id": 1750721586511,
+      "petName": "mia",
+      "petOwnerName": "deb",
+      "petOwnerTel": "111818181",
+      "description": "banho e tosa",
+      "date": "2025-06-23",
+      "time": "20:00"
+    },
+    {
+      "id": 1750721654768,
+      "petName": "mia",
+      "petOwnerName": "deb",
+      "petOwnerTel": "585858585",
+      "description": "vacinação",
+      "date": "2025-06-23",
+      "time": "15:00"
+    }
+  ]
+}

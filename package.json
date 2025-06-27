@@ -1,0 +1,21 @@
+{
+  "name": "agendamento_pet-shop",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "server": "json-server --watch server.json --port 3333"
+  },
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.3",
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.13",
+    "json": "^11.0.0",
+    "server": "^1.0.41"
+  }
+}
